@@ -43,7 +43,7 @@ for (let index = 0; index <= ITEMS_AMOUNT; index++) {
 }
 
 const write = (filename, data) =>
-  writeFile(join(seederBaseFolder, filename), JSON.stringify(data, null, 4));
+  writeFile(join(seederBaseFolder, filename), JSON.stringify(data, null, 2));
 
 (async () => {
   await write("cars.json", cars);
