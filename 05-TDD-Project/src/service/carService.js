@@ -51,7 +51,7 @@ class CarService {
 
   async rent(customer, carCategory, numberOfDays) {
     const car = await this.getAvailableCar(carCategory);
-    const finalPrice = await this.calculateFinalPrice(
+    const finalPrice = this.calculateFinalPrice(
       customer,
       carCategory,
       numberOfDays
